@@ -71,11 +71,11 @@ endblock %} {% block content %}
       </div>
 
       <div class="mb-4">
-        <h3 class="text-primary fw-bold mb-0">{{ item.price }} TL</h3>
+        <h3 class="text-primary fw-bold mb-0">{{ item.price }} $</h3>
         {% if item.old_price %}
         <div class="d-flex align-items-center">
           <span class="text-decoration-line-through text-muted me-2"
-            >{{ item.old_price }} TL</span
+            >{{ item.old_price }} $</span
           >
           <span class="badge bg-danger"
             >{{ ((1 - (item.price / item.old_price)) * 100)|round|int }}%
@@ -335,7 +335,7 @@ endblock %} {% block content %}
             </div>
             <div class="card-body">
               <h5 class="card-title text-truncate">{{ product.name }}</h5>
-              <p class="text-primary fw-bold">{{ product.price }} TL</p>
+              <p class="text-primary fw-bold">{{ product.price }} $</p>
 
               {% if product.rating %}
               <div class="d-flex align-items-center">
